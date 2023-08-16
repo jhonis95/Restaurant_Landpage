@@ -39,5 +39,24 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Salsa`,
+            file: `'https://fonts.googleapis.com/css2?family=Salsa&display=swap'`,
+          },
+        ],
+        web: [
+          {
+            name: `Sonsie One`,
+            file: `https://fonts.googleapis.com/css2?family=Sonsie+One:wght@400;600;700&display=swap`,
+          },
+        ],
+      },
+    },
   ],
 }
