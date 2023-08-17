@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 .link{
   text-decoration: none;
   font-size: larger;
@@ -22,11 +24,12 @@
 .home__container{
   position: absolute;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  height: 100%;
-  margin-left: 50px;
-  color: #ddfd00;
+  height: auto;
+  padding: 35vh 0 0 3.125rem;
+  color: var(--primary-color-light-two);
+  width: 100%;
+  justify-content: space-around;
 }
 .home__title{
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -37,4 +40,56 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary-color-dark-two);
   font-family:'Sonsie One';
+  margin: 0;
+}
+.home__title__sub{
+  color: var(--primary-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Courgette';
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary-color-dark-two);
+}
+.home__title__sub2{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Courgette';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary-color-dark-two);
+}
+.button__Text{
+  text-decoration: none;
+  /* addicionar color ao root */
+  color: #AC5100;
+  text-align: center;
+  font-family: 'Shrikhand';
+  /* addicionar size ao root */
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button__Order{
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+  background: #FDE929;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.button__Menu{
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+  background: #FD8D29;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.home__button__container{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
 }

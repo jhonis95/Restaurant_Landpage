@@ -1,8 +1,9 @@
+import { Link } from "gatsby"
 import * as React from "react"
 import data from "../data.json"
 import * as styles from "./index.module.css"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => {
   // <header
   //   style={{
   //     margin: `0 auto`,
@@ -30,11 +31,28 @@ const Header = ({ siteTitle }) => (
   //    */}
 
   // </header>
-  <div className={styles.home__container}>
-    <h1 className={styles.home__title}>{data.restaurant.name} Restaurant</h1>
-    <h2>Asian Culinary</h2>
-    <p>Exploring the Boundaries of Food Fusion</p>
-  </div>
-)
+  const orderLink='https://www.grubhub.com/restaurant/curiosity-by-intrinsic-161-midland-ave-kearny/4198872';
+  return(
+    <div className={styles.home__container}>
+      <div className={styles.home__text__container}>
+        <h1 className={styles.home__title}>{data.restaurant.name} Restaurant</h1>
+        <h2 className={styles.home__title__sub}>Asian Culinary</h2>
+        <p className={styles.home__title__sub2}>Exploring the Boundaries of Food Fusion</p>
+      </div>
+      <div className={styles.home__button__container}>
+        <button className={styles.button__Order}>
+          <Link className={styles.button__Text} to={orderLink}>
+            Order Online
+          </Link>
+        </button>
+        <button className={styles.button__Menu}>
+          <Link className={styles.button__Text} to="#menu">
+            Menu
+          </Link>
+        </button>
+      </div>
+    </div>
+  )
+}
 
 export default Header
