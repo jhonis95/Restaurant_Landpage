@@ -14,9 +14,9 @@ const Header = () => {
       </div>
       <div className={styles.home__button__container}>
         <button className={styles.button__Order}>
-          <Link className={styles.button__Text} to={orderLink}>
+          <a className={styles.button__Text} href={orderLink}>
             Order Online
-          </Link>
+          </a>
         </button>
         <button className={styles.button__Menu}>
           <Link className={styles.button__Text} to="#menu">
