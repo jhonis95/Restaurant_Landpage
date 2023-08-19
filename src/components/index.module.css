@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   height: auto;
-  padding: 35vh 0 0 3.125rem;
+  padding-top: 35vh;
   color: var(--primary-color-light-two);
   width: 100%;
   justify-content: space-around;
@@ -92,4 +92,30 @@
   flex-direction: column;
   gap: 3rem;
   justify-content: center;
+}
+.subMenu{
+  color: var(--primary-color-dark-two, #AC8000);
+  font-family: Shrikhand;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: auto;
+}
+.container__menu{
+  display: flex;
+  max-width: 90rem;
+  justify-content: space-evenly;
+}
+.text__dishes{
+  color: var(--primary-color-dark-one, #DBA405);
+  font-family: Salsa;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text__dishes:hover{
+  color: var(--primary-color-dark-two, #AC8000);
 }

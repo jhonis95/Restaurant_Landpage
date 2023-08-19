@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Menu from "./menu"
 
 import Header from "./header"
 import "./layout.css"
@@ -32,6 +32,11 @@ const Layout = ({ children }) => {
       <header id="header">
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </header>
+      <main id="menu">
+        <section>
+          <Menu/>
+        </section>
+      </main>
       <div
         style={{
           margin: `0 auto`,
@@ -39,7 +44,6 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-        <main>{children}</main>
         <footer
           style={{
             marginTop: `var(--space-5)`,

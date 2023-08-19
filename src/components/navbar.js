@@ -12,7 +12,7 @@ const Navbar=()=>{
                 <Link className={styles.link} to="#header">Home</Link>
                 <Link className={styles.link} to="#menu">Menu</Link>
                 <Link className={styles.link} to="#about">About</Link>
-                <Link className={styles.link} to="#galery">Galery</Link>
+                <Link className={styles.link} to="#gallery">Gallery</Link>
             </div>
         </>
     )
