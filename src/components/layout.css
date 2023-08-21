@@ -43,6 +43,7 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
+  background-color: var(--primary-color-light-two);
 }
 header{
   background-image: url("../images/img-home-background.jpg");
@@ -64,6 +65,5 @@ nav{
   z-index: 2;
 }
 main{
-  height: 100vh;
   padding-top: 90px;
 }

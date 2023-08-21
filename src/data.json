@@ -16,37 +16,37 @@
                         "name":"Garlic Naan",
                         "descriprion":"Garlic Naan bread is Indian leavened flatbread made with all-purpose flour and spiced with garlic",
                         "price":"Price $ 3.00",
-                        "image":""
+                        "image":"/static/04786234ee0c8bef2dda6b9dbc1bfdc9/1f9d2/Garlac_Naan.png"
                     },
                     {
-                        "name":"",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "name":"Scallion Pancakes",
+                        "descriprion":"A scallion pancake is a kind of pancake made with scallions. It is usually chewy, flaky, and savory.",
+                        "price":"Price $ 3.00",
+                        "image":"/static/fb993d63e75986df02e105af53f4fbbc/1f9d2/Scallion_Pancakes.png"
                     },
                     {
-                        "name":"",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "name":"Onigiri ",
+                        "descriprion":"Onigiri is a Japanese food made from white rice formed into triangular or cylindrical shapes.",
+                        "price":"Price $ 3.00",
+                        "image":"/static/011a23de608e4f94ff45ca04419bcf21/1f9d2/Onigiri.png"
                     },
                     {
-                        "name":"",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "name":"Satay Chicken",
+                        "descriprion":"is a popular Southeast Asian street food that usually involves a marinated meat being skewered and grilled.",
+                        "price":"Price $ 2.50",
+                        "image":"/static/7831606b81a83ce5c3ca7b1d60a4b511/1f9d2/Satay_Chicken.png"
                     },
                     {
-                        "name":"",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "name":"Tofu Skewer",
+                        "descriprion":"tofu is cut into bite-sized cubes and marinated in some type of sauce. They are then skewered onto a skewer",
+                        "price":"Price $ 2.50",
+                        "image":"/static/73bdaa2e541e6739ed244dcfdc583103/1f9d2/Tofu_Skewer.png"
                     },
                     {
-                        "name":"",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "name":"Miso Soup",
+                        "descriprion":"Miso soup is a traditional Japanese soup consisting of a dashi stock into which softened miso paste is mixed.",
+                        "price":"Price $ 3.00",
+                        "image":"/static/b9f065c57be24932e100327ef77ab4e2/1f9d2/Miso_Soup.png"
                     }
                 ]
             },

@@ -2,15 +2,17 @@ import React from "react";
 import * as styles from "./index.module.css"
 import data from "../data.json"
 import { v4 as uuidv4 } from 'uuid';
-
 function Card({name,description,price,image}){
+    // import img from {image}
     return(
-        <div>
+        <section className={styles.card__Container}>
             <img src={image} alt={name+' image'} />
-            <h3>{name}</h3>
-            <p>{description}</p>
-            <p>{price}</p>
-        </div>
+            <div className={styles.card__text__container}>
+                <h3 className={styles.card__dish__name}>{name}</h3>
+                <p className={styles.card__dish__description}>{description}</p>
+                <p className={styles.card__dish__price}>{price}</p>
+            </div>
+        </section>
     )
 }
 
