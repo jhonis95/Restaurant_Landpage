@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from "./index.module.css"
 import data from "../data.json"
 import { useState } from "react";
-import Appetizers from "./Appetizers";
+import CardContainer from "./cardContainer";
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -32,11 +32,7 @@ function Menu(){
         <>
             <h2 className={styles.subMenu}>Menu</h2>
             <TypeContainer activeMenu={setActiveMenu}/>
-            {activeMenu==='Appetizer'&&<Appetizers/>}
-            {activeMenu==='Curry'&&<p>curry</p>}
-            {activeMenu==='Bowls'&&<p>bowls</p>}
-            {activeMenu==='Drinks'&&<p>drink</p>}
-            {activeMenu==='Dessert'&&<p>dessert</p>}
+            <CardContainer activeMenu={activeMenu}/>
         </>
     )
 }
