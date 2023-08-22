@@ -34,10 +34,17 @@ const Layout = () => {
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </header>
       <main id="menu">
-        <section style={{paddingTop:'90px'}}>
+        <section style={{paddingTop:'90px',padding:'0 30px'}}>
           <Menu/>
         </section>
-        <section id="gallery" style={{paddingTop:'90px',backgroundColor:'var(--contrast-color-light-one)'}}>
+        <section 
+          id="gallery" 
+          style={
+            {
+              paddingTop:'90px',
+              backgroundColor:'var(--contrast-color-light-one)'
+            }
+          }>
           <Gallery/>
         </section>
       </main>
