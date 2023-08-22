@@ -137,6 +137,7 @@
   justify-content: space-around;
   gap: 30px;
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 .card__Container{
   width: 24.3125rem;
@@ -182,4 +183,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.gallery__img__container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
 }

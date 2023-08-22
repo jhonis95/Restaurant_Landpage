@@ -218,9 +218,11 @@
             }
         ],
         "gallery":{
-            "image":[
-                "",
-                ""
+            "images":[
+                "/static/f8214b98cdca30f3220138d7340f8d0c/a3b2d/dish_picture.png",
+                "/static/a70afb3ff5d9dfed6e67d3d3e6e2e4bf/a3b2d/inside_picture.png",
+                "/static/7c8fcafa7ddf80484eade39833c2679c/a3b2d/coffee_picture.png",
+                "/static/ea241cd3a099cb1f4c0e3bcd1f4d32d2/a3b2d/smooth_picture.png"
             ]
         }
     }
