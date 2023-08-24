@@ -13,6 +13,7 @@ import Header from "./header"
 import "./layout.css"
 import Navbar from "./navbar"
 import Gallery from "./gallery"
+import About from "./about"
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -34,18 +35,34 @@ const Layout = () => {
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </header>
       <main id="menu">
-        <section style={{paddingTop:'90px',padding:'0 30px'}}>
+        <section 
+          style={
+            {
+              paddingTop:'50px',
+              padding:'0 30px'
+            }
+          }>
           <Menu/>
         </section>
         <section 
           id="gallery" 
           style={
             {
-              paddingTop:'90px',
+              paddingTop:'50px',
               backgroundColor:'var(--contrast-color-light-one)'
             }
           }>
           <Gallery/>
+        </section>
+        <section 
+          style={
+            {
+              width:'100%',
+              height:'100vh',
+              paddingTop:'50px'
+            }
+          }>
+          <About/>
         </section>
       </main>
       {/* <div

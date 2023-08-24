@@ -4,7 +4,7 @@
         "location":"161 Midland Ave, Kearny, NJ 07032, EUA",
         "phone":"+1 201 458 2225",
         "email":"",
-        "about":"",
+        "about":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         "social_media":{
             "instagram":"",
             "facebook":""
@@ -224,6 +224,10 @@
                 "/static/7c8fcafa7ddf80484eade39833c2679c/a3b2d/coffee_picture.png",
                 "/static/ea241cd3a099cb1f4c0e3bcd1f4d32d2/a3b2d/smooth_picture.png"
             ]
+        },
+        "about_images":{
+            "mobile":"/static/0481ed7e29e751037eb55cdea5b2325f/43bcc/outside.png",
+            "desktop":"/static/0b34cf280c62053ec54216c31c328631/10425/backyard.png"
         }
     }
 }
