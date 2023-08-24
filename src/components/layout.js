@@ -29,7 +29,7 @@ const Layout = () => {
 
   return (
     <>
-      <nav>
+      <nav id="navbar">
         <Navbar></Navbar>
       </nav>
       <header id="header">
