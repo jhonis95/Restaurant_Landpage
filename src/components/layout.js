@@ -14,6 +14,7 @@ import "./layout.css"
 import Navbar from "./navbar"
 import Gallery from "./gallery"
 import About from "./about"
+import Footnote from "./footnote"
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -58,13 +59,15 @@ const Layout = () => {
           style={
             {
               width:'100%',
-              height:'100vh',
               paddingTop:'50px'
             }
           }>
           <About/>
         </section>
       </main>
+      <footer style={{padding:'20px 0px'}}>
+          <Footnote/>
+      </footer>
       {/* <div
         style={{
           margin: `0 auto`,

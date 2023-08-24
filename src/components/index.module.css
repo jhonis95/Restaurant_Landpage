@@ -219,6 +219,16 @@
   font-weight: 400;
   line-height: normal;
 }
+.footer__container__text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer__text{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 /* /// media query /// */
 @media (max-width: 1246px) {
   .gallery__img__container{
