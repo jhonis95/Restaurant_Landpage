@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import data from "../data.json"
 import * as styles from "./index.module.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 function About(){
     const [device,setDevice]=useState('');
@@ -25,9 +26,9 @@ function About(){
                     <p>{data.restaurant.about}</p>
                 </div>
                 {
-                    device=='mobile'?
-                        <img style={{maxWidth:'400px'}} src={data.restaurant.about_images.mobile} alt="outside pic" />:
-                        <img style={{maxWidth:'32.4375rem',maxHeight:'42.9375rem'}} src={data.restaurant.about_images.desktop} alt="backyard pic" />
+                    device==='mobile'?
+                        <StaticImage style={{maxWidth:'400px'}} src="../images/about/outside.png" alt="outside pic" />:
+                        <StaticImage style={{maxWidth:'32.4375rem',maxHeight:'42.9375rem'}} src="../images/about/backyard.png" alt="backyard pic" />
                 }
 
             </div>

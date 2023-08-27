@@ -53,11 +53,12 @@ function Navbar(){
     const [device,setDevice]=useState('');
 
     useEffect(()=>{
+        updateMedia()
         window.addEventListener("resize", updateMedia);
         return () => window.removeEventListener("resize", updateMedia);
     })
     function updateMedia(){
-        if(window.innerWidth<=828){
+        if(window.innerWidth<828){
             setDevice('mobile')
         }else{
             setDevice('desktop')

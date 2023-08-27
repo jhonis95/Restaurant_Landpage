@@ -14,16 +14,23 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  
   plugins: [
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/appatizer`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-sharp`,{
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images/appatizer`,
+        path: `${__dirname}/src/images/appatizer`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -37,12 +44,6 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
-      },
-    },{
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images/appatizer`,
-        path: `${__dirname}/src/images/appatizer`,
       },
     },
     {
