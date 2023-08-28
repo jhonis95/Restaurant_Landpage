@@ -14,23 +14,43 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
-  
   plugins: [
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images/appatizer`,
-      },
-    },
-    `gatsby-transformer-sharp`,{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images/appatizer`,
         path: `${__dirname}/src/images/appatizer`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images/curry`,
+        path: `${__dirname}/src/images/curry`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images/bowls`,
+        path: `${__dirname}/src/images/bowls`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `restalrantData`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        typeName: `data`
+      }
+    },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

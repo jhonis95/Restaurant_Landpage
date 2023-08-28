@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import data from "../data.json"
+import data from "../content/data.json"
 import * as styles from "./index.module.css"
 
 const Header = () => {

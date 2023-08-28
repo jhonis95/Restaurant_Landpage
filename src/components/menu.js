@@ -1,8 +1,8 @@
 import * as React from "react"
 import * as styles from "./index.module.css"
-import data from "../data.json"
+import data from "../content/data.json"
 import { useState } from "react";
-import CardContainer from "./cardContainer";
+import CardContainer from "../templates/cardContainer";
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -27,7 +27,7 @@ function TypeContainer({activeMenu}){
     )
 }
 function Menu(){
-    const [activeMenu,setActiveMenu]=useState("Appetizer");
+    const [activeMenu,setActiveMenu]=useState("appetizer");
     return(
         <>
             <h2 className={styles.subMenu}>Menu</h2>

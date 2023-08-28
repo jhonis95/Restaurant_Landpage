@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import data from "../data.json"
+import data from "../content/data.json"
 import * as styles from "./index.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
