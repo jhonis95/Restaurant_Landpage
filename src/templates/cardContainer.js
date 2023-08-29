@@ -94,10 +94,9 @@ function CardContainer({activeMenu}){
         <section className={styles.menu__appatizer__container}>
             {
                 dishes.map((appetizer)=>{
-                    console.log(getImage(query.data.restaurant.menu[0].appetizer.image))
                     return(
                         <section className={styles.card__Container} key={uuidv4}>
-                            <GatsbyImage image={getImage(appetizer.image)} alt={appetizer+' image'} />
+                            <GatsbyImage image={appetizer.image.childrenImageSharp[0].gatsbyImageData} alt={appetizer+' image'} />
                             <div className={styles.card__text__container}>
                                 <h3 className={styles.card__dish__name}>{appetizer.name}</h3>
                                 <p className={styles.card__dish__description}>{appetizer.descriprion}</p>
