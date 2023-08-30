@@ -29,7 +29,7 @@ function Footnote(){
                     <p>Phone: +1 201 458 2225 </p>
                 </div>
             </div>
-            <p style={{textAlign:'center',margin:'0'}}>copyright © 2020 all rights reserved</p>
+            <p >copyright © 2020 all rights reserved</p>
         </>
     )
 }

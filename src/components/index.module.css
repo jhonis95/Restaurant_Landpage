@@ -255,6 +255,8 @@ footer p{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
+  margin: 0;
 }
 /* /// media query /// */
 @media (max-width: 1246px) {
@@ -324,10 +326,23 @@ footer p{
   .about__content__container{
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10px;
+  }
+  .about__text__container h3{
+    font-size: 1.5rem;
+  }
+  .about__text__container p{
+    font-size: 1rem;
   }
   .footer__container__text{
     flex-direction: column;
     align-items: center;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+  footer svg{
+    width: 30px;
   }
 }
 /* /// animation //// */

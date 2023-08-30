@@ -4,36 +4,24 @@ import { v4 as uuidv4 } from 'uuid';
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql,useStaticQuery } from "gatsby"
 
-function CardDesktop({name,description,price,image}){
+function Card({name,description,price,image,device}){
     const img=getImage(image.childrenImageSharp[0].gatsbyImageData)
     return(
         <section className={styles.card__Container}>
-            <GatsbyImage 
-                image={img} 
+            {
+              device.device==="mobile"?
+              <GatsbyImage image={img} 
                 alt={name+' image'}
                 layout={"fullWidth"}
                 placeholder={"blurred"}
-                // style={{width:'100%',height:'100%'}}
-            />
-            <div className={styles.card__text__container}>
-                <h3 className={styles.card__dish__name}>{name}</h3>
-                <p className={styles.card__dish__description}>{description}</p>
-                <p className={styles.card__dish__price}>{price}</p>
-            </div>
-        </section>
-    )
-}
-function CardMobile({name,description,price,image}){
-    const img=getImage(image.childrenImageSharp[0].gatsbyImageData)
-    return(
-        <section className={styles.card__Container}>
-            <GatsbyImage 
-                image={img} 
+                style={{width:'100px'}}
+              />:
+              <GatsbyImage image={img} 
                 alt={name+' image'}
                 layout={"fullWidth"}
                 placeholder={"blurred"}
-                style={{width:'100px',height:'100%'}}
-            />
+              />
+            }
             <div className={styles.card__text__container}>
                 <h3 className={styles.card__dish__name}>{name}</h3>
                 <p className={styles.card__dish__description}>{description}</p>
@@ -112,26 +100,19 @@ function CardContainer({activeMenuIs,device}){
        default:
            break;
    }
- },[])
+ })
     return(
         <section className={styles.menu__appatizer__container}>
             {
                 dishes.map((appetizer)=>{
                     return(
-                        device.device=='desktop'?
-                        <CardDesktop 
-                            name={appetizer.name+ ' desktop'}
+                        <Card
+                            name={appetizer.name}
                             description={appetizer.descriprion}
                             price={appetizer.price}
                             image={appetizer.image}
-                            key={uuidv4}
-                        />:
-                        <CardMobile
-                            name={appetizer.name+ ' mobile'}
-                            description={appetizer.descriprion}
-                            price={appetizer.price}
-                            image={appetizer.image}
-                            key={uuidv4}
+                            device={device}
+                            key={uuidv4()}
                         />
                     )
                 })
