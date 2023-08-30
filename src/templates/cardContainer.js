@@ -3,23 +3,46 @@ import * as styles from "../components/index.module.css"
 import { v4 as uuidv4 } from 'uuid';
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql,useStaticQuery } from "gatsby"
-// function Card({name,description,price,image}){
-//     console.log(image.childrenImageSharp)
-//     // console.log(getImage(image.childrenImageSharp.gatsbyImageData.image))
-//     const img=image.childrenImageSharp
-//     return(
-//         <section className={styles.card__Container}>
-//             <GatsbyImage image={img} alt={name+' image'} />
-//             <div className={styles.card__text__container}>
-//                 <h3 className={styles.card__dish__name}>{name}</h3>
-//                 <p className={styles.card__dish__description}>{description}</p>
-//                 <p className={styles.card__dish__price}>{price}</p>
-//             </div>
-//         </section>
-//     )
-// }
 
-function CardContainer({activeMenu}){
+function CardDesktop({name,description,price,image}){
+    const img=getImage(image.childrenImageSharp[0].gatsbyImageData)
+    return(
+        <section className={styles.card__Container}>
+            <GatsbyImage 
+                image={img} 
+                alt={name+' image'}
+                layout={"fullWidth"}
+                placeholder={"blurred"}
+                // style={{width:'100%',height:'100%'}}
+            />
+            <div className={styles.card__text__container}>
+                <h3 className={styles.card__dish__name}>{name}</h3>
+                <p className={styles.card__dish__description}>{description}</p>
+                <p className={styles.card__dish__price}>{price}</p>
+            </div>
+        </section>
+    )
+}
+function CardMobile({name,description,price,image}){
+    const img=getImage(image.childrenImageSharp[0].gatsbyImageData)
+    return(
+        <section className={styles.card__Container}>
+            <GatsbyImage 
+                image={img} 
+                alt={name+' image'}
+                layout={"fullWidth"}
+                placeholder={"blurred"}
+                style={{width:'100px',height:'100%'}}
+            />
+            <div className={styles.card__text__container}>
+                <h3 className={styles.card__dish__name}>{name}</h3>
+                <p className={styles.card__dish__description}>{description}</p>
+                <p className={styles.card__dish__price}>{price}</p>
+            </div>
+        </section>
+    )
+}
+function CardContainer({activeMenuIs,device}){
   const query = useStaticQuery(graphql`
   query MyQuery2 {
     data {
@@ -70,7 +93,7 @@ function CardContainer({activeMenu}){
 `)
  const [dishes,setDishes]=useState([])
  useEffect(()=>{
-   switch(activeMenu){
+   switch(activeMenuIs){
        case "appetizer":
           setDishes(query.data.restaurant.menu[0].appetizer)
           break;
@@ -89,20 +112,27 @@ function CardContainer({activeMenu}){
        default:
            break;
    }
- })
+ },[])
     return(
         <section className={styles.menu__appatizer__container}>
             {
                 dishes.map((appetizer)=>{
                     return(
-                        <section className={styles.card__Container} key={uuidv4}>
-                            <GatsbyImage image={appetizer.image.childrenImageSharp[0].gatsbyImageData} alt={appetizer+' image'} />
-                            <div className={styles.card__text__container}>
-                                <h3 className={styles.card__dish__name}>{appetizer.name}</h3>
-                                <p className={styles.card__dish__description}>{appetizer.descriprion}</p>
-                                <p className={styles.card__dish__price}>{appetizer.price}</p>
-                            </div>
-                        </section>
+                        device.device=='desktop'?
+                        <CardDesktop 
+                            name={appetizer.name+ ' desktop'}
+                            description={appetizer.descriprion}
+                            price={appetizer.price}
+                            image={appetizer.image}
+                            key={uuidv4}
+                        />:
+                        <CardMobile
+                            name={appetizer.name+ ' mobile'}
+                            description={appetizer.descriprion}
+                            price={appetizer.price}
+                            image={appetizer.image}
+                            key={uuidv4}
+                        />
                     )
                 })
             }

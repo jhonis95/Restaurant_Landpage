@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `restalrantData`,
+        name: `data`,
         path: `${__dirname}/src/content`,
       },
     },

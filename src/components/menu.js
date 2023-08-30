@@ -26,13 +26,13 @@ function TypeContainer({activeMenu}){
         </section>
     )
 }
-function Menu(){
+function Menu(device){
     const [activeMenu,setActiveMenu]=useState("appetizer");
     return(
         <>
             <h2 className={styles.subMenu}>Menu</h2>
             <TypeContainer activeMenu={setActiveMenu}/>
-            <CardContainer activeMenu={activeMenu}/>
+            <CardContainer activeMenuIs={activeMenu} device={device}/>
         </>
     )
 }

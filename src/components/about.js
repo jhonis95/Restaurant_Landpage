@@ -1,22 +1,9 @@
-import React, { useState,useEffect } from "react";
+import React from "react";
 import data from "../content/data.json"
 import * as styles from "./index.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-function About(){
-    const [device,setDevice]=useState('');
-
-    useEffect(()=>{
-        window.addEventListener("resize", updateMedia);
-        return () => window.removeEventListener("resize", updateMedia);
-    })
-    function updateMedia(){
-        if(window.innerWidth<=828){
-            setDevice('mobile')
-        }else{
-            setDevice('desktop')
-        }
-    }
+function About(device){
     return(
         <>
             <h2 id="about" className={styles.subMenu}>About</h2>
@@ -26,7 +13,7 @@ function About(){
                     <p>{data.restaurant.about}</p>
                 </div>
                 {
-                    device==='mobile'?
+                    device.device==='mobile'?
                         <StaticImage style={{maxWidth:'400px'}} src="../images/about/outside.png" alt="outside pic" />:
                         <StaticImage style={{maxWidth:'32.4375rem',maxHeight:'42.9375rem'}} src="../images/about/backyard.png" alt="backyard pic" />
                 }

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import * as styles from "../components/index.module.css"
 import logo from "../images/logo.png"
@@ -49,26 +49,12 @@ function ModalMenu(){
         </div>
     )
 }
-function Navbar(){
-    const [device,setDevice]=useState('');
-
-    useEffect(()=>{
-        updateMedia()
-        window.addEventListener("resize", updateMedia);
-        return () => window.removeEventListener("resize", updateMedia);
-    })
-    function updateMedia(){
-        if(window.innerWidth<828){
-            setDevice('mobile')
-        }else{
-            setDevice('desktop')
-        }
-    }
+function Navbar(device){
     return(
         <>  
             <img className={styles.navbar__logo} src={logo} alt="Curiosity by Intrinsic logo" />
             {
-                device==='desktop'?<MenuDesktop/>:<MenuMobile/>
+                device.device==='desktop'?<MenuDesktop/>:<MenuMobile/>
             }
         </>
     )

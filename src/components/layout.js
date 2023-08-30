@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
+import React,{useState, useEffect} from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Menu from "./menu"
 
@@ -26,24 +26,39 @@ const Layout = () => {
       }
     }
   `)
+  const [device,setDevice]=useState('');
 
+  useEffect(()=>{
+      updateMedia()
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia);
+  })
+  function updateMedia(){
+      if(window.innerWidth<828){
+          setDevice('mobile')
+      }else{
+          setDevice('desktop')
+      }
+  }
   return (
     <>
       <nav id="navbar">
-        <Navbar></Navbar>
+        <Navbar device={device}></Navbar>
       </nav>
       <header id="header">
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </header>
       <main id="menu">
         <section 
-          style={
-            {
-              paddingTop:'50px',
-              padding:'0 30px'
-            }
-          }>
-          <Menu/>
+          // id="menuContainer"
+          // style={
+          //   {
+          //     paddingTop:'50px',
+          //     padding:'0 30px'
+          //   }
+          // }
+          >
+          <Menu device={device}/>
         </section>
         <section 
           id="gallery" 
@@ -62,7 +77,7 @@ const Layout = () => {
               paddingTop:'50px'
             }
           }>
-          <About/>
+          <About device={device}/>
         </section>
       </main>
       <footer style={{padding:'20px 0px'}}>
