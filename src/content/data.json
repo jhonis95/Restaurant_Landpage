@@ -15,37 +15,37 @@
                     {
                         "name":"Garlic Naan",
                         "descriprion":"Garlic Naan bread is Indian leavened flatbread made with all-purpose flour and spiced with garlic",
-                        "price":"Price $ 3.00",
+                        "price":"Price $ 5.00",
                         "image":"../images/appatizer/Garlac_Naan.png"
                     },
                     {
                         "name":"Scallion Pancakes",
                         "descriprion":"A scallion pancake is a kind of pancake made with scallions. It is usually chewy, flaky, and savory.",
-                        "price":"Price $ 3.00",
+                        "price":"Price $ 4.25",
                         "image":"../images/appatizer/Scallion_Pancakes.png"
                     },
                     {
-                        "name":"Onigiri ",
+                        "name":"Onigiri",
                         "descriprion":"Onigiri is a Japanese food made from white rice formed into triangular or cylindrical shapes.",
-                        "price":"Price $ 3.00",
+                        "price":"Price $ 3.75",
                         "image":"../images/appatizer/Onigiri.png"
                     },
                     {
                         "name":"Satay Chicken",
                         "descriprion":"is a popular Southeast Asian street food that usually involves a marinated meat being skewered and grilled.",
-                        "price":"Price $ 2.50",
+                        "price":"Price $ 4.75",
                         "image":"../images/appatizer/Satay_Chicken.png"
                     },
                     {
                         "name":"Tofu Skewer",
                         "descriprion":"tofu is cut into bite-sized cubes and marinated in some type of sauce. They are then skewered onto a skewer",
-                        "price":"Price $ 2.50",
+                        "price":"Price $ 4.25",
                         "image":"../images/appatizer/Tofu_Skewer.png"
                     },
                     {
                         "name":"Miso Soup",
                         "descriprion":"Miso soup is a traditional Japanese soup consisting of a dashi stock into which softened miso paste is mixed.",
-                        "price":"Price $ 3.00",
+                        "price":"Price $ 3.50",
                         "image":"../images/appatizer/Miso_Soup.png"
                     }
                 ]
@@ -55,19 +55,19 @@
                     {
                         "name":"Pumpkin Patch",
                         "descriprion":"Kabucha Pumpkin with Potatos and Carrots",
-                        "price":"Price $ 10.50",
+                        "price":"Price $ 13.00",
                         "image":"../image/curry/Pumpkin_Patch.png"
                     },
                     {
                         "name":"Walk on The Field",
                         "descriprion":"Chicken Breast in Mild Curry Sauce",
-                        "price":"Price $ 10.50",
+                        "price":"Price $ 13.00",
                         "image":"../image/curry/Walk_on_The_Field.png"
                     },
                     {
                         "name":"Take a Swim",
                         "descriprion":"Pollock in Japanese Curry Sauce",
-                        "price":"Price $ 11.50",
+                        "price":"Price $ 15.00",
                         "image":"../image/curry/Take_a_Swim.png"
                     }
                 ]
@@ -77,26 +77,32 @@
                     {
                         "name":"Salmon Teriyaki",
                         "descriprion":"Pan Seared Salmon With A Light Teriyaki Glaze",
-                        "price":"Price $ 15.50",
+                        "price":"Price $ 20.00",
                         "image":"../images/bowls/Salmon_Teriyaki.png"
                     },
                     {
                         "name":"Unadon",
                         "descriprion":"Grilled Eel Rice Bowl",
-                        "price":"Price $ 9.00",
+                        "price":"Price $ 15.00",
                         "image":"../images/bowls/Unadon.png"
                     },
                     {
                         "name":"Saboro",
                         "descriprion":"Ground Chicken Bowl",
-                        "price":"Price $ 10.00",
+                        "price":"Price $ 13.00",
                         "image":"../images/bowls/Saboro.png"
                     },
                     {
                         "name":"Veggie Bowl",
                         "descriprion":"Seasonal Veggies Over Rice",
-                        "price":"Price $ 9.00",
+                        "price":"Price $ 13.00",
                         "image":"../images/bowls/Veggie_Bowl.png"
+                    },
+                    {
+                        "name":"Kids Meal",
+                        "descriprion":"",
+                        "price":"Price $ 8.50",
+                        "image":""
                     }
                 ]
             },
@@ -177,13 +183,13 @@
                     {
                         "name":"Regular Coffee (Coffee)",
                         "descriprion":"",
-                        "price":"",
+                        "price":"Price $ 2.00",
                         "image":""
                     },
                     {
                         "name":"Cappuccino (Coffee)",
                         "descriprion":"",
-                        "price":"",
+                        "price":"Price $ 3.75",
                         "image":""
                     },
                     {
@@ -197,9 +203,9 @@
             {
                 "dessert":[
                     {
-                        "name":"Chocolate Cake",
-                        "descriprion":"",
-                        "price":"",
+                        "name":"Cake",
+                        "descriprion":"We have Chocolate Obsession Cake and Vanilla Cake",
+                        "price":"Price $ 4.50",
                         "image":""
                     },
                     {
@@ -212,6 +218,18 @@
                         "name":"Vegan Cupcake",
                         "descriprion":"",
                         "price":"",
+                        "image":""
+                    },
+                    {
+                        "name":"Cookies",
+                        "descriprion":"",
+                        "price":"Price $ 13.00",
+                        "image":""
+                    },
+                    {
+                        "name":"Brownie",
+                        "descriprion":"",
+                        "price":"Price $ 4.00",
                         "image":""
                     }
                 ]
