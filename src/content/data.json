@@ -54,21 +54,21 @@
                 "curry":[
                     {
                         "name":"Pumpkin Patch",
-                        "descriprion":"Kabucha Pumpkin with Potatos and Carrots",
+                        "descriprion":"Kabocha Pumpkin with Potatos and Carrots",
                         "price":"Price $ 13.00",
-                        "image":"../image/curry/Pumpkin_Patch.png"
+                        "image":"../images/curry/Pumpkin_Patch.png"
                     },
                     {
                         "name":"Walk on The Field",
                         "descriprion":"Chicken Breast in Mild Curry Sauce",
                         "price":"Price $ 13.00",
-                        "image":"../image/curry/Walk_on_The_Field.png"
+                        "image":"../images/curry/Walk_on_The_Field.png"
                     },
                     {
                         "name":"Take a Swim",
                         "descriprion":"Pollock in Japanese Curry Sauce",
                         "price":"Price $ 15.00",
-                        "image":"../image/curry/Take_a_Swim.png"
+                        "image":"../images/curry/Take_a_Swim.png"
                     }
                 ]
             },
@@ -97,12 +97,6 @@
                         "descriprion":"Seasonal Veggies Over Rice",
                         "price":"Price $ 13.00",
                         "image":"../images/bowls/Veggie_Bowl.png"
-                    },
-                    {
-                        "name":"Kids Meal",
-                        "descriprion":"",
-                        "price":"Price $ 8.50",
-                        "image":""
                     }
                 ]
             },

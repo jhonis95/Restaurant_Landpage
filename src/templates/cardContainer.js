@@ -5,10 +5,11 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql,useStaticQuery } from "gatsby"
 
 function Card({name,description,price,image,device}){
-    // console.log(image.childrenImageSharp[0].gatsbyImageData)
-    const img=async (image)=>{const imagem=await getImage(image.childrenImageSharp[0].gatsbyImageData); console.log(imagem); return imagem}
-    // console.log(img)
-    // const img=getImage(image.childrenImageSharp[0].gatsbyImageData)
+    const [img,setImg]=useState({})
+    useEffect(()=>{
+      console.log(image)
+      setImg(getImage(image.childrenImageSharp[0].gatsbyImageData))
+    })
     return(
         <section className={styles.card__Container}>
             {
@@ -63,7 +64,11 @@ function CardContainer({activeMenuIs,device}){
             descriprion
             name
             price
-            image
+            image {
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
           }
           dessert {
             descriprion
@@ -108,6 +113,8 @@ function CardContainer({activeMenuIs,device}){
         <section className={styles.menu__appatizer__container}>
             {
                 dishes.map((appetizer)=>{
+                    console.log(dishes)
+                    console.log(appetizer.image)
                     return(
                         <Card
                             name={appetizer.name}

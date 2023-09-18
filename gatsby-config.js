@@ -15,25 +15,24 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images/appatizer`,
-        path: `${__dirname}/src/images/appatizer`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images/curry`,
+        name: `curry`,
         path: `${__dirname}/src/images/curry`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images/bowls`,
+        name: `appatizer`,
+        path: `${__dirname}/src/images/appatizer`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bowls`,
         path: `${__dirname}/src/images/bowls`,
       },
     },
@@ -47,9 +46,11 @@ module.exports = {
     {
       resolve: `gatsby-transformer-json`,
       options: {
-        typeName: `data`
+        typeName: `data`,
+        path: `${__dirname}/src/content`
       }
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
