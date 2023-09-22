@@ -9,6 +9,17 @@
             "instagram":"",
             "facebook":""
         },
+        "specialCard":{
+            "title":"Weekend",
+            "subtitle":"Specials",
+            "descripiton":"Only on Friday / Saturday / Sunday",
+            "menu":{
+                "dish":"onigiri",
+                "dishPrice": "Price $ 5.50",
+                "plate":"Platter",
+                "platePrice":"Price $ 23.00"
+            }
+        },
         "menu":[
             {
                 "appetizer":[
@@ -51,7 +62,7 @@
                 ]
             },
             {
-                "curry":[
+                "entrées":[
                     {
                         "name":"Pumpkin Patch",
                         "descriprion":"Kabocha Pumpkin with Potatos and Carrots",
@@ -69,11 +80,35 @@
                         "descriprion":"Pollock in Japanese Curry Sauce",
                         "price":"Price $ 15.00",
                         "image":"../images/curry/Take_a_Swim.png"
+                    },
+                    {
+                        "name":"Salmon Teriyaki",
+                        "descriprion":"Pan Seared Salmon With A Light Teriyaki Glaze",
+                        "price":"Price $ 20.00",
+                        "image":"../images/bowls/Salmon_Teriyaki.png"
+                    },
+                    {
+                        "name":"Unadon",
+                        "descriprion":"Grilled Eel Rice Bowl",
+                        "price":"Price $ 15.00",
+                        "image":"../images/bowls/Unadon.png"
+                    },
+                    {
+                        "name":"Saboro",
+                        "descriprion":"Ground Chicken Bowl",
+                        "price":"Price $ 13.00",
+                        "image":"../images/bowls/Saboro.png"
+                    },
+                    {
+                        "name":"Veggie Bowl",
+                        "descriprion":"Seasonal Veggies Over Rice",
+                        "price":"Price $ 13.00",
+                        "image":"../images/bowls/Veggie_Bowl.png"
                     }
                 ]
             },
             {
-                "bowls":[
+                "smoothies":[
                     {
                         "name":"Salmon Teriyaki",
                         "descriprion":"Pan Seared Salmon With A Light Teriyaki Glaze",
@@ -228,6 +263,36 @@
                     }
                 ]
             }
-        ]
+        ],
+        "bubbleTea":{
+            "teas":{
+                "title":"Teas",
+                "content":[
+                    "",
+                    ""
+                ]
+            },
+            "juices":{
+                "title":"Juices",
+                "content":[
+                    "",
+                    ""
+                ]
+            },
+            "addOns":{
+                "title":"Add-Ons:",
+                "content":[
+                    "",
+                    ""
+                ]
+            },
+            "milkSubstitutes":{
+                "title":"Milk Substitutes:",
+                "content":[
+                    "",
+                    ""
+                ]
+            }
+        }
     }
 }
