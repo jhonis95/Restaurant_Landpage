@@ -18,7 +18,7 @@ function TypeContainer({activeMenu}){
                             onClick={()=>{activeMenu(Object.keys(dishType)[0])}}
                             key={uuidv4()}
                         >
-                            {Object.keys(dishType)[0]}
+                            {dishType.title}
                         </button>
                     )
                 })

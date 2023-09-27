@@ -89,42 +89,58 @@ function CardContainer({activeMenuIs,device}){
 `)
  const [dishes,setDishes]=useState([])
  useEffect(()=>{
-   switch(activeMenuIs){
-       case "appetizer":
-          setDishes(query.data.restaurant.menu[0].appetizer)
-          break;
-       case "curry":
-          setDishes(query.data.restaurant.menu[1].curry)
-          break;
-       case "bowls":
-          setDishes(query.data.restaurant.menu[2].bowls)
-          break;
-       case "drinks":
-          setDishes(query.data.restaurant.menu[3].drinks)
-          break;
-       case "dessert":
-          setDishes(query.data.restaurant.menu[4].dessert)
-          break;
-       default:
-           break;
-   }
+  switch(activeMenuIs){
+      case "appetizer":
+         setDishes(query.data.restaurant.menu[0].appetizer)
+         break;
+      case "entrees":
+         setDishes(query.data.restaurant.menu[1].entrees)
+         break;
+      case "smoothies":
+         setDishes(query.data.restaurant.menu[2].smoothies)
+         break;
+      case "latte":
+         setDishes(query.data.restaurant.menu[3].latte)
+         break;
+      case "coffee":
+         setDishes(query.data.restaurant.menu[4].coffee)
+         break;
+      case "dessert":
+        setDishes(query.data.restaurant.menu[4].dessert)
+        break;
+      case "sushi":
+        setDishes(query.data.restaurant.menu[4].sushi)
+        break;
+      case "sushi":
+        setDishes(query.data.restaurant.menu[4].sushi)
+        break;
+      default:
+        break;
+  }
  })
+function returnCards(){
+ return(
+   <Card
+       name={appetizer.name}
+       description={appetizer.descriprion}
+       price={appetizer.price}
+       image={appetizer.image}
+       device={device}
+       key={uuidv4()}
+   />
+  )
+}
+function returnLink(){
+  return(
+    // window.location.href = 'localhost:'
+    console.log('go to bebble tea')
+  )
+}
     return(
         <section className={styles.menu__appatizer__container}>
             {
                 dishes.map((appetizer)=>{
-                    console.log(dishes)
-                    console.log(appetizer.image)
-                    return(
-                        <Card
-                            name={appetizer.name}
-                            description={appetizer.descriprion}
-                            price={appetizer.price}
-                            image={appetizer.image}
-                            device={device}
-                            key={uuidv4()}
-                        />
-                    )
+                    appetizer=='bubbleTea'?returnCards():returnLink()
                 })
             }
         </section>

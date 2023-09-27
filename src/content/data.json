@@ -22,6 +22,7 @@
         },
         "menu":[
             {
+                "title":"Appetizer",
                 "appetizer":[
                     {
                         "name":"Garlic Naan",
@@ -62,237 +63,331 @@
                 ]
             },
             {
-                "entrées":[
+                "title":"Entrées",
+                "entrees":[
                     {
                         "name":"Pumpkin Patch",
                         "descriprion":"Kabocha Pumpkin with Potatos and Carrots",
                         "price":"Price $ 13.00",
-                        "image":"../images/curry/Pumpkin_Patch.png"
+                        "image":"../images/entrees/Pumpkin_Patch.png"
                     },
                     {
                         "name":"Walk on The Field",
                         "descriprion":"Chicken Breast in Mild Curry Sauce",
                         "price":"Price $ 13.00",
-                        "image":"../images/curry/Walk_on_The_Field.png"
+                        "image":"../images/entrees/Walk_on_The_Field.png"
                     },
                     {
                         "name":"Take a Swim",
                         "descriprion":"Pollock in Japanese Curry Sauce",
                         "price":"Price $ 15.00",
-                        "image":"../images/curry/Take_a_Swim.png"
+                        "image":"../images/entrees/Take_a_Swim.png"
                     },
                     {
                         "name":"Salmon Teriyaki",
                         "descriprion":"Pan Seared Salmon With A Light Teriyaki Glaze",
                         "price":"Price $ 20.00",
-                        "image":"../images/bowls/Salmon_Teriyaki.png"
+                        "image":"../images/entrees/Salmon_Teriyaki.png"
+                    },
+                    {
+                        "name":"Soboro",
+                        "descriprion":"Ground Chicken Bowl",
+                        "price":"Price $ 13.00",
+                        "image":"../images/entrees/saboro.png"
                     },
                     {
                         "name":"Unadon",
                         "descriprion":"Grilled Eel Rice Bowl",
                         "price":"Price $ 15.00",
-                        "image":"../images/bowls/Unadon.png"
+                        "image":"../images/entrees/Unadon.png"
+                    },
+                    {
+                        "name":"Chicken Teriyaki",
+                        "descriprion":"teriyaki is used to refer to meat or fish that has been grilled on skewers or pan-broiled, flavored either by marinating.",
+                        "price":"Price $ 14.00",
+                        "image":"../images/entrees/chicken-teriyaki.png"
                     },
                     {
                         "name":"Saboro",
-                        "descriprion":"Ground Chicken Bowl",
+                        "descriprion":"Diced salmon bowl",
+                        "price":"Price $ 15.00",
+                        "image":"../images/entrees/saboro.png"
+                    },
+                    {
+                        "name":"Oyakodon",
+                        "descriprion":"This is a simple and healthy dish that, aside from the sauce, uses only egg, onion, chicken, and rice.",
+                        "price":"Price $ 15.00",
+                        "image":"../images/entrees/oyakodon.png"
+                    },
+                    {
+                        "name":"Korean Chicken",
+                        "descriprion":"Korean fried chicken is unique in the sense that is known for being double-fried.",
                         "price":"Price $ 13.00",
-                        "image":"../images/bowls/Saboro.png"
+                        "image":"../images/entrees/korean-chicken.png"
                     },
                     {
                         "name":"Veggie Bowl",
                         "descriprion":"Seasonal Veggies Over Rice",
                         "price":"Price $ 13.00",
                         "image":"../images/bowls/Veggie_Bowl.png"
+                    },
+                    {
+                        "name":"Kids Meal",
+                        "descriprion":"Rice, Chicken with pink sauce.",
+                        "price":"Price $ 8.50",
+                        "image":"../images/entrees/kids-meal.png"
                     }
                 ]
             },
             {
+                "title":"Smoothies",
                 "smoothies":[
                     {
-                        "name":"Salmon Teriyaki",
-                        "descriprion":"Pan Seared Salmon With A Light Teriyaki Glaze",
-                        "price":"Price $ 20.00",
-                        "image":"../images/bowls/Salmon_Teriyaki.png"
-                    },
-                    {
-                        "name":"Unadon",
-                        "descriprion":"Grilled Eel Rice Bowl",
-                        "price":"Price $ 15.00",
-                        "image":"../images/bowls/Unadon.png"
-                    },
-                    {
-                        "name":"Saboro",
-                        "descriprion":"Ground Chicken Bowl",
-                        "price":"Price $ 13.00",
-                        "image":"../images/bowls/Saboro.png"
-                    },
-                    {
-                        "name":"Veggie Bowl",
-                        "descriprion":"Seasonal Veggies Over Rice",
-                        "price":"Price $ 13.00",
-                        "image":"../images/bowls/Veggie_Bowl.png"
-                    }
-                ]
-            },
-            {
-                "drinks":[
-                    {
-                        "name":"The Tropics (Smoothies)",
+                        "name":"The Tropics",
                         "descriprion":"Coconut, Strawberry and Mango",
-                        "price":"",
-                        "image":""
+                        "price":"Price $ 4.25",
+                        "image":"../images/smoothies/the-tropics.png"
                     },
                     {
-                        "name":"Pink Plush (Smoothies)",
-                        "descriprion":"Strawberry, Coconut and Acai",
-                        "price":"",
-                        "image":""
+                        "name":"Pink Plush",
+                        "descriprion":"Strawberry, Coconut and Açaí",
+                        "price":"Price $ 4.25",
+                        "image":"../images/smoothies/pink-plush.png"
                     },
                     {
-                        "name":"Green With a Twist (Smoothies)",
-                        "descriprion":"Green Tea and Mango",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Regular (Japanese Soda)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Strawberry (Japanese Soda)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Lychee (Japanese Soda)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Melon (Japanese Soda)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Honeydew (Japanese Soda)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Coconut Latte (Tea Latte - No Espresso)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Milk Tea Latte (Tea Latte - No Espresso)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Matcha Latte (Tea Latte - No Espresso)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Jasminee Latte (Tea Latte - No Espresso)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
-                    },
-                    {
-                        "name":"Regular Coffee (Coffee)",
-                        "descriprion":"",
-                        "price":"Price $ 2.00",
-                        "image":""
-                    },
-                    {
-                        "name":"Cappuccino (Coffee)",
-                        "descriprion":"",
-                        "price":"Price $ 3.75",
-                        "image":""
-                    },
-                    {
-                        "name":"Latte (Coffee)",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "name":"Green with a Twist",
+                        "descriprion":"Green Tea and mango",
+                        "price":"Price $ 4.25",
+                        "image":"../images/smoothies/green-with-a-twist.png"
                     }
                 ]
             },
             {
+                "title":"Tea Latte",
+                "lattes":[
+                    {
+                        "name":"Coconut Latte",
+                        "descriprion":"No Espresso",
+                        "price":"Price $ 0.00",
+                        "image":"../images/lattes/cooconut-latte.png"
+                    },
+                    {
+                        "name":"Milk Tea Latte",
+                        "descriprion":"No Espresso",
+                        "price":"Price $ 0.00",
+                        "image":"../images/lattes/milk-tea-latte.png"
+                    },
+                    {
+                        "name":"Matcha Latte",
+                        "descriprion":"No Espresso",
+                        "price":"Price $ 0.00",
+                        "image":"../images/lattes/matcha-latte.png"
+                    },
+                    {
+                        "name":"Jasmine Latte",
+                        "descriprion":"No Espresso",
+                        "price":"Price $ 0.00",
+                        "image":"../images/lattes/jasmine-latte.png"
+                    },
+                    {
+                        "name":"Chai Latte",
+                        "descriprion":"No Espresso",
+                        "price":"Price $ 0.00",
+                        "image":"../images/lattes/chai-latte.png"
+                    }
+                ]
+            },
+            {
+                "title":"Coffee",
+                "coffee":[
+                    {
+                        "name":"Caramel Macchiato",
+                        "descriprion":" ",
+                        "price":"Price $ 3.75",
+                        "image":"../images/coffee/caramel-macchiato.png"
+                    },
+                    {
+                        "name":"Regular Coffee",
+                        "descriprion":" ",
+                        "price":"Price $ 2.00",
+                        "image":"../images/coffee/regular-coffee.png"
+                    },
+                    {
+                        "name":"Coffe Latte",
+                        "descriprion":" ",
+                        "price":"Price $ 3.50",
+                        "image":"../images/coffee/coffee-latte.png"
+                    },
+                    {
+                        "name":"Cappuccino",
+                        "descriprion":" ",
+                        "price":"Price $ 3.75",
+                        "image":"../images/coffee/cappuccino.png"
+                    },
+                    {
+                        "name":"Mocha",
+                        "descriprion":" ",
+                        "price":"Price $ 3.75",
+                        "image":"../images/coffee/mocha.png"
+                    }
+                ]
+            },
+            {
+                "title":"Dessert",
                 "dessert":[
                     {
-                        "name":"Cake",
-                        "descriprion":"We have Chocolate Obsession Cake and Vanilla Cake",
+                        "name":"Chocolate Cake",
+                        "descriprion":" ",
                         "price":"Price $ 4.50",
-                        "image":""
-                    },
-                    {
-                        "name":"Mochi Pancakes",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "image":"../images/dessert/chocolate-cake.png"
                     },
                     {
                         "name":"Vegan Cupcake",
-                        "descriprion":"",
-                        "price":"",
-                        "image":""
+                        "descriprion":" ",
+                        "price":"Price $ 3.00",
+                        "image":"../images/dessert/vegan-cupcake.png"
                     },
                     {
-                        "name":"Cookies",
-                        "descriprion":"",
-                        "price":"Price $ 13.00",
-                        "image":""
+                        "name":"Pecan Bar",
+                        "descriprion":" ",
+                        "price":"Price $ 4.75",
+                        "image":"../images/dessert/pecan-bar.png"
                     },
                     {
-                        "name":"Brownie",
-                        "descriprion":"",
-                        "price":"Price $ 4.00",
-                        "image":""
+                        "name":"Naked Strawberry Cake",
+                        "descriprion":" ",
+                        "price":"Price $ 4.50",
+                        "image":"../images/dessert/naked-strawberry-cake"
+                    },
+                    {
+                        "name":"Mochi Waffle",
+                        "descriprion":" ",
+                        "price":"Price $ 8.00",
+                        "image":"../images/dessert/mochi-waffle.png"
                     }
                 ]
+            },
+            {
+                "title":"Sushi Roll",
+                "sushi":[
+                    {
+                        "name":"Tuna Roll",
+                        "descriprion":"Tuna roll is made of 3 main ingredients. Sushi rice, nori (seaweed), and sashimi-grade tuna.",
+                        "price":"Price $ 6.75",
+                        "image":"../images/sushi/tuna-roll.png"
+                    },
+                    {
+                        "name":"Salmon Roll",
+                        "descriprion":"Salmon roll is made of 3 main ingredients. Sushi rice, nori (seaweed), and sashimi-grade Salmon.",
+                        "price":"Price $ 7.50",
+                        "image":"../images/sushi/salmon-roll.png"
+                    },
+                    {
+                        "name":"Rainbow Roll",
+                        "descriprion":"Popular western style where the rice is on the outside, while the sheet of nori holds the fillings in place.",
+                        "price":"Price $ 13.50",
+                        "image":"../images/sushi/rainbow-roll.png"
+                    },
+                    {
+                        "name":"Dragon Roll",
+                        "descriprion":"The festive dragon roll is a tasty uramaki sushi roll featuring avocado, unagi, and shrimp tempura.",
+                        "price":"Price $ 14.50",
+                        "image":"../images/sushi/dragon-roll.png"
+                    },
+                    {
+                        "name":"Spicy Salmon",
+                        "descriprion":"Spicy salmon roll is a type of sushi roll made from raw salmon, spicy sauce and sushi rice, wrapped in nori (seaweed).",
+                        "price":"Price $ 7.50",
+                        "image":"../images/sushi/spicy-salmon.png"
+                    },
+                    {
+                        "name":"California Roll",
+                        "descriprion":"A California roll is a sushi roll that uses avocado, cucumber, and lump crab meat instead of the traditional raw fish.",
+                        "price":"Price $ 6.50",
+                        "image":"../images/sushi/california-roll.png"
+                    },
+                    {
+                        "name":"Spicy Tuna Roll",
+                        "descriprion":"Spicy tuna tastes mild and fresh in flavor with a slightly spicy kick and has a soft, melt in your mouth texture.",
+                        "price":"Price $ 6.75",
+                        "image":"../images/sushi/spicy-tuna-roll.png"
+                    },
+                    {
+                        "name":"Unagi Roll",
+                        "descriprion":"sushi roll featuring Japanese eel cooked in a rich umami sauce, then rolled in seasoned sushi rice and nori.",
+                        "price":"Price $ 7.50",
+                        "image":"../images/sushi/unagi-roll.png"
+                    },
+                    {
+                        "name":"Sweet Potato Roll ",
+                        "descriprion":"Filled with sushi rice, roasted sweet potatoes, rolled in a seaweed wrap and drizzled with a creamy spicy.",
+                        "price":"Price $ 7.00",
+                        "image":"../images/sushi/sweet-potato-roll.png"
+                    },
+                    {
+                        "name":"Salmon Avocado",
+                        "descriprion":"Is a type of sushi in which seasoned sushi rice is spread out on nori seaweed sheets, filled with avocado",
+                        "price":"Price $ 7.50",
+                        "image":"../images/sushi/salmon-avocado.png"
+                    }
+                ]
+            },
+            {
+                "bubbleTea":{
+                    "title":"Bubble Tea",
+                    "teas":{
+                        "title":"Teas",
+                        "content":[
+                            "Banana",
+                            "Blueberry",
+                            "Coconut",
+                            "Honeydew",
+                            "Jasmine Green Tea",
+                            "Mango",
+                            "Matcha",
+                            "Milk Tea",
+                            "Peach",
+                            "Taro",
+                            "Thai",
+                            "Strawberry"
+                        ]
+                    },
+                    "juices":{
+                        "title":"Juices",
+                        "content":[
+                            "Açaí",
+                            "Guava",
+                            "Kiwi",
+                            "Kumquat",
+                            "Lemon",
+                            "Lychee",
+                            "Mango",
+                            "Peach",
+                            "Passionfruit",
+                            "Pineapple",
+                            "Strawberry"
+                        ]
+                    },
+                    "addOns":{
+                        "title":"Add-Ons:",
+                        "content":[
+                            "Tapioca",
+                            "Lychee Jelly",
+                            "Brown Sugar",
+                            "Peach Pop",
+                            "Mango Pop"
+                        ]
+                    },
+                    "milkSubstitutes":{
+                        "title":"Milk Substitutes:",
+                        "content":[
+                            "Oat Milk",
+                            "Soy Milk",
+                            "Almond Milk"
+                        ]
+                    }
+                }
             }
-        ],
-        "bubbleTea":{
-            "teas":{
-                "title":"Teas",
-                "content":[
-                    "",
-                    ""
-                ]
-            },
-            "juices":{
-                "title":"Juices",
-                "content":[
-                    "",
-                    ""
-                ]
-            },
-            "addOns":{
-                "title":"Add-Ons:",
-                "content":[
-                    "",
-                    ""
-                ]
-            },
-            "milkSubstitutes":{
-                "title":"Milk Substitutes:",
-                "content":[
-                    "",
-                    ""
-                ]
-            }
-        }
+        ]
     }
 }
