@@ -151,8 +151,9 @@
 .menu__appatizer__container{
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  justify-content: space-between;
+  width: 87%;
+  justify-content:left;
+  gap: 50px;
   row-gap: 30px;
   margin: 40px auto;
 }

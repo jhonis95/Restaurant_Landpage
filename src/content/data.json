@@ -129,7 +129,7 @@
                         "name":"Veggie Bowl",
                         "descriprion":"Seasonal Veggies Over Rice",
                         "price":"Price $ 13.00",
-                        "image":"../images/bowls/Veggie_Bowl.png"
+                        "image":"../images/entrees/Veggie_Bowl.png"
                     },
                     {
                         "name":"Kids Meal",
@@ -169,31 +169,31 @@
                         "name":"Coconut Latte",
                         "descriprion":"No Espresso",
                         "price":"Price $ 0.00",
-                        "image":"../images/lattes/cooconut-latte.png"
+                        "image":"../images/latte/coconut-latte.png"
                     },
                     {
                         "name":"Milk Tea Latte",
                         "descriprion":"No Espresso",
                         "price":"Price $ 0.00",
-                        "image":"../images/lattes/milk-tea-latte.png"
+                        "image":"../images/latte/milk-tea-latte.png"
                     },
                     {
                         "name":"Matcha Latte",
                         "descriprion":"No Espresso",
                         "price":"Price $ 0.00",
-                        "image":"../images/lattes/matcha-latte.png"
+                        "image":"../images/latte/matcha-latte.png"
                     },
                     {
                         "name":"Jasmine Latte",
                         "descriprion":"No Espresso",
                         "price":"Price $ 0.00",
-                        "image":"../images/lattes/jasmine-latte.png"
+                        "image":"../images/latte/jasmine-latte.png"
                     },
                     {
                         "name":"Chai Latte",
                         "descriprion":"No Espresso",
                         "price":"Price $ 0.00",
-                        "image":"../images/lattes/chai-latte.png"
+                        "image":"../images/latte/chai-latte.png"
                     }
                 ]
             },
@@ -257,7 +257,7 @@
                         "name":"Naked Strawberry Cake",
                         "descriprion":" ",
                         "price":"Price $ 4.50",
-                        "image":"../images/dessert/naked-strawberry-cake"
+                        "image":"../images/dessert/naked-strawberry-cake.png"
                     },
                     {
                         "name":"Mochi Waffle",
@@ -331,63 +331,61 @@
                         "image":"../images/sushi/salmon-avocado.png"
                     }
                 ]
-            },
-            {
-                "bubbleTea":{
-                    "title":"Bubble Tea",
-                    "teas":{
-                        "title":"Teas",
-                        "content":[
-                            "Banana",
-                            "Blueberry",
-                            "Coconut",
-                            "Honeydew",
-                            "Jasmine Green Tea",
-                            "Mango",
-                            "Matcha",
-                            "Milk Tea",
-                            "Peach",
-                            "Taro",
-                            "Thai",
-                            "Strawberry"
-                        ]
-                    },
-                    "juices":{
-                        "title":"Juices",
-                        "content":[
-                            "Açaí",
-                            "Guava",
-                            "Kiwi",
-                            "Kumquat",
-                            "Lemon",
-                            "Lychee",
-                            "Mango",
-                            "Peach",
-                            "Passionfruit",
-                            "Pineapple",
-                            "Strawberry"
-                        ]
-                    },
-                    "addOns":{
-                        "title":"Add-Ons:",
-                        "content":[
-                            "Tapioca",
-                            "Lychee Jelly",
-                            "Brown Sugar",
-                            "Peach Pop",
-                            "Mango Pop"
-                        ]
-                    },
-                    "milkSubstitutes":{
-                        "title":"Milk Substitutes:",
-                        "content":[
-                            "Oat Milk",
-                            "Soy Milk",
-                            "Almond Milk"
-                        ]
-                    }
-                }
             }
-        ]
+        ],
+        "bubleeTea":{
+            "title":"Bubble Tea",
+            "teas":{
+                "title":"Teas",
+                "content":[
+                    "Banana",
+                    "Blueberry",
+                    "Coconut",
+                    "Honeydew",
+                    "Jasmine Green Tea",
+                    "Mango",
+                    "Matcha",
+                    "Milk Tea",
+                    "Peach",
+                    "Taro",
+                    "Thai",
+                    "Strawberry"
+                ]
+            },
+            "juices":{
+                "title":"Juices",
+                "content":[
+                    "Açaí",
+                    "Guava",
+                    "Kiwi",
+                    "Kumquat",
+                    "Lemon",
+                    "Lychee",
+                    "Mango",
+                    "Peach",
+                    "Passionfruit",
+                    "Pineapple",
+                    "Strawberry"
+                ]
+            },
+            "addOns":{
+                "title":"Add-Ons:",
+                "content":[
+                    "Tapioca",
+                    "Lychee Jelly",
+                    "Brown Sugar",
+                    "Peach Pop",
+                    "Mango Pop"
+                ]
+            },
+            "milkSubstitutes":{
+                "title":"Milk Substitutes:",
+                "content":[
+                    "Oat Milk",
+                    "Soy Milk",
+                    "Almond Milk"
+                ]
+            }
+        }
     }
 }

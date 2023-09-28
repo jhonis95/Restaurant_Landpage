@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `curry`,
-        path: `${__dirname}/src/images/curry`,
+        name: `entrees`,
+        path: `${__dirname}/src/images/entrees`,
       },
     },
     {
@@ -32,8 +32,36 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `bowls`,
-        path: `${__dirname}/src/images/bowls`,
+        name: `smoothies`,
+        path: `${__dirname}/src/images/smoothies`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `latte`,
+        path: `${__dirname}/src/images/latte`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `coffee`,
+        path: `${__dirname}/src/images/coffee`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `dessert`,
+        path: `${__dirname}/src/images/dessert`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sushi`,
+        path: `${__dirname}/src/images/sushi`,
       },
     },
     {

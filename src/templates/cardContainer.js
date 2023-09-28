@@ -9,7 +9,7 @@ function Card({name,description,price,image,device}){
     useEffect(()=>{
       console.log(image)
       setImg(getImage(image.childrenImageSharp[0].gatsbyImageData))
-    })
+    },[])
     return(
         <section className={styles.card__Container}>
             {
@@ -36,21 +36,21 @@ function Card({name,description,price,image,device}){
 }
 function CardContainer({activeMenuIs,device}){
   const query = useStaticQuery(graphql`
-  query MyQuery2 {
+  query MyQuery {
     data {
       restaurant {
         menu {
           appetizer {
             name
+            price
+            descriprion
             image {
               childrenImageSharp {
                 gatsbyImageData
               }
             }
-            price
-            descriprion
           }
-          bowls {
+          entrees {
             descriprion
             name
             price
@@ -60,7 +60,27 @@ function CardContainer({activeMenuIs,device}){
               }
             }
           }
-          curry {
+          smoothies {
+            descriprion
+            name
+            price
+            image {
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+          lattes {
+            descriprion
+            name
+            price
+            image {
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+          coffee {
             descriprion
             name
             price
@@ -74,13 +94,21 @@ function CardContainer({activeMenuIs,device}){
             descriprion
             name
             price
-            image
+            image {
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
           }
-          drinks {
+          sushi {
             descriprion
             name
             price
-            image
+            image {
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
           }
         }
       }
@@ -89,59 +117,48 @@ function CardContainer({activeMenuIs,device}){
 `)
  const [dishes,setDishes]=useState([])
  useEffect(()=>{
+  console.log(activeMenuIs)
   switch(activeMenuIs){
-      case "appetizer":
+      case "Appetizer":
          setDishes(query.data.restaurant.menu[0].appetizer)
          break;
-      case "entrees":
+      case "Entrées":
          setDishes(query.data.restaurant.menu[1].entrees)
          break;
-      case "smoothies":
+      case "Smoothies":
          setDishes(query.data.restaurant.menu[2].smoothies)
          break;
-      case "latte":
-         setDishes(query.data.restaurant.menu[3].latte)
+      case "Tea Latte":
+         setDishes(query.data.restaurant.menu[3].lattes)
          break;
-      case "coffee":
+      case "Coffee":
          setDishes(query.data.restaurant.menu[4].coffee)
          break;
-      case "dessert":
-        setDishes(query.data.restaurant.menu[4].dessert)
+      case "Dessert":
+        setDishes(query.data.restaurant.menu[5].dessert)
         break;
-      case "sushi":
-        setDishes(query.data.restaurant.menu[4].sushi)
-        break;
-      case "sushi":
-        setDishes(query.data.restaurant.menu[4].sushi)
+      case "Sushi Roll":
+        setDishes(query.data.restaurant.menu[6].sushi)
         break;
       default:
         break;
   }
  })
-function returnCards(){
- return(
-   <Card
-       name={appetizer.name}
-       description={appetizer.descriprion}
-       price={appetizer.price}
-       image={appetizer.image}
-       device={device}
-       key={uuidv4()}
-   />
-  )
-}
-function returnLink(){
-  return(
-    // window.location.href = 'localhost:'
-    console.log('go to bebble tea')
-  )
-}
     return(
         <section className={styles.menu__appatizer__container}>
             {
                 dishes.map((appetizer)=>{
-                    appetizer=='bubbleTea'?returnCards():returnLink()
-                })
+                   return(
+                      <Card
+                        name={appetizer.name}
+                        description={appetizer.descriprion}
+                        price={appetizer.price}
+                        image={appetizer.image}
+                        device={device}
+                        key={uuidv4()}
+                      />
+                   )
+                  })
             }
         </section>
     )

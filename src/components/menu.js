@@ -4,6 +4,7 @@ import data from "../content/data.json"
 import { useState } from "react";
 import CardContainer from "../templates/cardContainer";
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from "gatsby";
 
 
 function TypeContainer({activeMenu}){
@@ -15,7 +16,7 @@ function TypeContainer({activeMenu}){
                     return(
                         <button 
                             className={styles.text__dishes}
-                            onClick={()=>{activeMenu(Object.keys(dishType)[0])}}
+                            onClick={()=>{activeMenu(dishType.title)}}
                             key={uuidv4()}
                         >
                             {dishType.title}
@@ -23,6 +24,7 @@ function TypeContainer({activeMenu}){
                     )
                 })
             }
+            <Link to="">{data.restaurant.bubleeTea.title}</Link>
         </section>
     )
 }
