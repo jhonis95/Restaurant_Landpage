@@ -12,13 +12,15 @@
         "specialCard":{
             "title":"Weekend",
             "subtitle":"Specials",
-            "descripiton":"Only on Friday / Saturday / Sunday",
+            "descripiton":"Only on",
+            "days":"Friday / Saturday / Sunday",
             "menu":{
-                "dish":"onigiri",
+                "dish":"Two Onigiri",
                 "dishPrice": "Price $ 5.50",
                 "plate":"Platter",
                 "platePrice":"Price $ 23.00"
-            }
+            },
+            "image":"../images/onigiri.png"
         },
         "menu":[
             {

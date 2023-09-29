@@ -24,7 +24,7 @@ function TypeContainer({activeMenu}){
                     )
                 })
             }
-            <Link to="">{data.restaurant.bubleeTea.title}</Link>
+            <Link className={styles.text__dishes} to="">{data.restaurant.bubleeTea.title}</Link>
         </section>
     )
 }

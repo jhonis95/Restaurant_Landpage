@@ -144,6 +144,7 @@
   background-color: inherit;
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
 }
 .text__dishes:hover{
   color: var(--primary-color-dark-two, #AC8000);

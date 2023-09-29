@@ -15,6 +15,8 @@ import Navbar from "./navbar"
 import Gallery from "./gallery"
 import About from "./about"
 import Footnote from "./footnote"
+import Advertise from "./advertise"
+import BubbleTea from "./bubbleTea"
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -48,6 +50,9 @@ const Layout = () => {
       <header id="header">
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </header>
+      <section>
+          <Advertise/>
+      </section>
       <main id="menu">
         <section 
           // id="menuContainer"
@@ -60,6 +65,9 @@ const Layout = () => {
           >
           <Menu device={device}/>
         </section>
+        {/* <section>
+          <BubbleTea/>
+        </section> */}
         <section 
           id="gallery" 
           style={

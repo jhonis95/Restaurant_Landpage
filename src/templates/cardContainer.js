@@ -9,7 +9,7 @@ function Card({name,description,price,image,device}){
     useEffect(()=>{
       console.log(image)
       setImg(getImage(image.childrenImageSharp[0].gatsbyImageData))
-    },[])
+    })
     return(
         <section className={styles.card__Container}>
             {
@@ -115,9 +115,10 @@ function CardContainer({activeMenuIs,device}){
     }
   }
 `)
- const [dishes,setDishes]=useState([])
+console.log("aqui")
+  console.log(query)
+ const [dishes,setDishes]=useState(query.data.restaurant.menu[0].appetizer)
  useEffect(()=>{
-  console.log(activeMenuIs)
   switch(activeMenuIs){
       case "Appetizer":
          setDishes(query.data.restaurant.menu[0].appetizer)
