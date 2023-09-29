@@ -46,13 +46,13 @@ function BubbleTea(){
     const background=getImage(data.data.restaurant.bubbleTea.background.childrenImageSharp[0].gatsbyImageData);
     return(
         <>
-            <GatsbyImage 
-                   image={background} 
-                   alt={'bubbeTea-image'}
-                   layout={"fullWidth"}
-                   placeholder={"blurred"}
-                />
             <h2 className={styles.subMenu} id="bubbleTea">{data.data.restaurant.bubbleTea.title}</h2>
+            <GatsbyImage 
+               image={background} 
+               alt={'bubbeTea-image'}
+               layout={"fullWidth"}
+               placeholder={"blurred"}
+            />
             <div>
                 <div>
                     <h4>{data.data.restaurant.bubbleTea.teas.title}</h4>
