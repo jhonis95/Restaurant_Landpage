@@ -5,11 +5,12 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql,useStaticQuery } from "gatsby"
 
 function Card({name,description,price,image,device}){
-    const [img,setImg]=useState({})
-    useEffect(()=>{
-      console.log(image)
-      setImg(getImage(image.childrenImageSharp[0].gatsbyImageData))
-    })
+    // const [img,setImg]=useState({})
+    // useEffect(()=>{
+    //   console.log(image)
+    //   setImg(getImage(image.childrenImageSharp[0].gatsbyImageData))
+    // })
+    const img=getImage(image.childrenImageSharp[0].gatsbyImageData);
     return(
         <section className={styles.card__Container}>
             {
@@ -35,8 +36,8 @@ function Card({name,description,price,image,device}){
     )
 }
 function CardContainer({activeMenuIs,device}){
-  const query = useStaticQuery(graphql`
-  query MyQuery {
+  const data = useStaticQuery(graphql`
+  query test {
     data {
       restaurant {
         menu {
@@ -115,31 +116,30 @@ function CardContainer({activeMenuIs,device}){
     }
   }
 `)
-console.log("aqui")
-  console.log(query)
- const [dishes,setDishes]=useState(query.data.restaurant.menu[0].appetizer)
+
+ const [dishes,setDishes]=useState(data.data.restaurant.menu[0].appetizer)
  useEffect(()=>{
   switch(activeMenuIs){
       case "Appetizer":
-         setDishes(query.data.restaurant.menu[0].appetizer)
+         setDishes(data.data.restaurant.menu[0].appetizer)
          break;
       case "Entrées":
-         setDishes(query.data.restaurant.menu[1].entrees)
+         setDishes(data.data.restaurant.menu[1].entrees)
          break;
       case "Smoothies":
-         setDishes(query.data.restaurant.menu[2].smoothies)
+         setDishes(data.data.restaurant.menu[2].smoothies)
          break;
       case "Tea Latte":
-         setDishes(query.data.restaurant.menu[3].lattes)
+         setDishes(data.data.restaurant.menu[3].lattes)
          break;
       case "Coffee":
-         setDishes(query.data.restaurant.menu[4].coffee)
+         setDishes(data.data.restaurant.menu[4].coffee)
          break;
       case "Dessert":
-        setDishes(query.data.restaurant.menu[5].dessert)
+        setDishes(data.data.restaurant.menu[5].dessert)
         break;
       case "Sushi Roll":
-        setDishes(query.data.restaurant.menu[6].sushi)
+        setDishes(data.data.restaurant.menu[6].sushi)
         break;
       default:
         break;

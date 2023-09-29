@@ -95,7 +95,7 @@
                         "name":"Soboro",
                         "descriprion":"Ground Chicken Bowl",
                         "price":"Price $ 13.00",
-                        "image":"../images/entrees/saboro.png"
+                        "image":"../images/entrees/soboro.png"
                     },
                     {
                         "name":"Unadon",
@@ -335,8 +335,10 @@
                 ]
             }
         ],
-        "bubleeTea":{
+        "bubbleTea":{
             "title":"Bubble Tea",
+            "image":"../images/bubbleTea/bubble-tea.png",
+            "background":"../images/bubbleTea/bubble-tea-background.png",
             "teas":{
                 "title":"Teas",
                 "content":[

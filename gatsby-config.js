@@ -18,6 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `bubbleTea images`,
+        path: `${__dirname}/src/images/bubbleTea`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `geral images`,
         path: `${__dirname}/src/images`,
       },

@@ -15,10 +15,4 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
-  createPage({
-    path: "/",
-    component: require.resolve("./src/pages/index.js"),
-    context: {},
-    defer: true,
-  })
 }
