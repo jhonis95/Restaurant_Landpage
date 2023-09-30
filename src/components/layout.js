@@ -65,9 +65,9 @@ const Layout = () => {
           >
           <Menu device={device}/>
         </section>
-        <section>
+        <>
           <BubbleTea/>
-        </section>
+        </>
         <section 
           id="gallery" 
           style={

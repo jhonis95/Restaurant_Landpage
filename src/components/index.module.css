@@ -125,6 +125,59 @@
   text-align: center;
   margin: auto;
 }
+.advertiseLayout_Conainer{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--secundary-color-light-one);
+  margin-bottom: 30px;
+}
+.advertiseText_container_one{
+  text-align: center;
+  align-self: center;
+}
+.advertiseText{
+  color: var(--primary-color-dark-two, #AC8000);
+  font-family: Shrikhand;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.advertiseText_subText{
+  color: var(--primary-color-dark-two, #AC8000);
+  font-family: Shrikhand;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+.advertiseText_container_two{
+  width: 500px;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+}
+.advertiseText_dafault{
+  color: var(--primary-color-dark-two, #AC8000);
+  text-align: center;
+  font-family: Salsa;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin:0;
+}
+.advertiseText_dafault_two{
+  color: var(--primary-color-dark-two, #AC8000);
+  text-align: center;
+  font-family: Salsa;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .container__menu{
   display: flex;
   flex-wrap: wrap;

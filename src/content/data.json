@@ -170,31 +170,31 @@
                     {
                         "name":"Coconut Latte",
                         "descriprion":"No Espresso",
-                        "price":"Price $ 0.00",
+                        "price":"Price $ 3.75",
                         "image":"../images/latte/coconut-latte.png"
                     },
                     {
                         "name":"Milk Tea Latte",
                         "descriprion":"No Espresso",
-                        "price":"Price $ 0.00",
+                        "price":"Price $ 3.75",
                         "image":"../images/latte/milk-tea-latte.png"
                     },
                     {
                         "name":"Matcha Latte",
                         "descriprion":"No Espresso",
-                        "price":"Price $ 0.00",
+                        "price":"Price $ 3.75",
                         "image":"../images/latte/matcha-latte.png"
                     },
                     {
                         "name":"Jasmine Latte",
                         "descriprion":"No Espresso",
-                        "price":"Price $ 0.00",
+                        "price":"Price $ 3.75",
                         "image":"../images/latte/jasmine-latte.png"
                     },
                     {
                         "name":"Chai Latte",
                         "descriprion":"No Espresso",
-                        "price":"Price $ 0.00",
+                        "price":"Price $ 4.00",
                         "image":"../images/latte/chai-latte.png"
                     }
                 ]

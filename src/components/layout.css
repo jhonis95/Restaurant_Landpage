@@ -6,6 +6,10 @@
   --primary-color-dark-one:#DBA405;
   --primary-color-dark-two:#AC8000;
   --contrast-color-light-one:#FFB97A;
+
+  --secundary-color:#FDE929;
+  --secundary-color-light-one:#FFEE51;
+  
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
