@@ -437,6 +437,8 @@ footer p{
     margin: 10px 0;
     width: 100%;
     justify-content: center;
+    height: 50vh;
+    overflow-y: scroll;
   }
   .card__Container{
     width: 21.125rem;
@@ -495,6 +497,17 @@ footer p{
   }
 }
 @media (max-width:450px){
+  .container__menu{
+    width: 150px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: auto;
+    display: block;
+  }
+  .text__dishes{
+    padding-right: 15px;
+  }
   .advertiseText{
     font-size: 1.25rem;
   }
