@@ -5,11 +5,6 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql,useStaticQuery } from "gatsby"
 
 function Card({name,description,price,image,device}){
-    // const [img,setImg]=useState({})
-    // useEffect(()=>{
-    //   console.log(image)
-    //   setImg(getImage(image.childrenImageSharp[0].gatsbyImageData))
-    // })
     const img=getImage(image.childrenImageSharp[0].gatsbyImageData);
     return(
         <section className={styles.card__Container}>

@@ -460,6 +460,18 @@ footer p{
   .card__image{
     width: 100px;
   }
+
+  .advertiseLayout_Conainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .advertiseText{
+    margin-top: 30px;
+  }
+  .advertiseText_container_two{
+    width: 100%;
+  }
+
   .about__content__container{
     flex-direction: column;
     align-items: center;
@@ -482,6 +494,21 @@ footer p{
     width: 30px;
   }
 }
+@media (max-width:450px){
+  .advertiseText{
+    font-size: 1.25rem;
+  }
+  .advertiseText_subText{
+    font-size: 2.625rem;
+  }
+  .advertiseText_dafault{
+    font-size: 1.25rem;
+  }
+  .advertiseText_dafault_two{
+    font-size: 1.25rem;
+  }
+}
+/* advertiseText */
 /* /// animation //// */
 @keyframes slideToRight{
   0% {
