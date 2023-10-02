@@ -273,7 +273,7 @@
 }
 .bubbleTeaContainer_content{
   display: flex;
-  height: 100vh;
+  position: relative;
 }
 .bubbleTeaContainer_two{
   background-color: var(--contrast-color-light-two);
@@ -309,7 +309,7 @@ li{
   justify-content: center;
   position: relative;
   padding-left: 8%;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .bubbleTeaContainer_one ul{
   display: flex;
@@ -406,7 +406,60 @@ footer p{
   .menu__appatizer__container{ 
     width: 90%;
     justify-content: space-around;
+    height: 100vh;
+    overflow: scroll;
   }
+  .bubbleTeaText_subtitle{
+    font-size: 1.25rem;
+  }
+  .bubbleTeaText_subtitle2{
+    font-size: 1.25rem;
+  }
+  li{
+    font-size: 1.45rem;
+  }
+}
+@media (max-width:940px) {
+  .bubbleTeaContainer_content{
+    flex-direction: column;
+  }
+  .bubbleTeaContainer_one{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .bubbleTeaContainer_one div{
+    width: 300px;
+    margin-top: 20px;
+  }
+  .bubbleTeaContainer_two{
+    padding-top: 90px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bubbleTeaContainer_two ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    align-content: center;
+    column-gap: 32px;
+  }
+  .bubbleTeaContainer_two div{
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;  
+  }
+  /* .bubbleTea_image{
+    width: 200px;
+    height: 200px;
+  } */
 }
 @media (max-width:828px) {
   .gallery__img__container{
@@ -439,6 +492,7 @@ footer p{
     justify-content: center;
     height: 50vh;
     overflow-y: scroll;
+    padding-bottom: 30px;
   }
   .card__Container{
     width: 21.125rem;
@@ -473,7 +527,6 @@ footer p{
   .advertiseText_container_two{
     width: 100%;
   }
-
   .about__content__container{
     flex-direction: column;
     align-items: center;
@@ -488,6 +541,10 @@ footer p{
   .footer__container__text{
     flex-direction: column;
     align-items: center;
+  }
+
+  .bubbleTeaContainer_one{
+    flex-direction: column;
   }
   footer p{
     font-size: 1rem;

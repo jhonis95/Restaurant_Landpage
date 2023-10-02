@@ -117,16 +117,16 @@ function BubbleTea(){
                     </div>
                     <GatsbyImage 
                        image={img} 
+                    //    className={styles.bubbleTea_image}
                        alt={'bubbeTea-image'}
-                       layout={"fullWidth"}
+                    //    layout="constrained"
                        placeholder={"blurred"}
                        style={
                         {
                             width:'300px',
                             height:'300px',
-                            marginLeft:'15%'
                         }
-                    }
+                       }
                     />
                 </div>
             </section>
