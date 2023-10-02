@@ -578,6 +578,11 @@ footer p{
     font-size: 1.25rem;
   }
 }
+@media (max-width:353px) {
+  .bubbleTeaContainer_two{
+    padding-top: 170px;
+  }
+}
 /* advertiseText */
 /* /// animation //// */
 @keyframes slideToRight{
