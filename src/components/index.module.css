@@ -205,7 +205,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 87%;
-  justify-content:left;
+  justify-content:center;
   gap: 50px;
   row-gap: 30px;
   margin: 40px auto;
